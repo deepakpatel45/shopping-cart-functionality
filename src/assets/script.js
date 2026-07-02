@@ -112,6 +112,7 @@ function pay(amount) {
   const balance = totalPaid - cartTotal();
 
   if (balance >= 0) {
+    emptyCart();
     totalPaid = 0;
   }
 
